@@ -244,7 +244,13 @@ export default function CheckoutPage() {
 
                         {/* Registration Form */}
                         <div>
-                            <h2 className="text-2xl font-bold text-white mb-6">Create your account & Pay</h2>
+                            <h2 className="text-2xl font-bold text-white mb-2">Create your account & Pay</h2>
+                            <p className="text-slate-400 mb-6">
+                                Already have an account?{" "}
+                                <Link href="/login" className="text-indigo-400 hover:underline">
+                                    Sign in here
+                                </Link>
+                            </p>
 
                             <form onSubmit={handlePayment} className="space-y-6">
                                 <div>
